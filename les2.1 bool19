@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите числа A, B, C: ";
+    cin >> a >> b >> c;
+    
+    bool result = (a == -b || a == -c || b == -c);
+    
+    cout << boolalpha << result << endl;
+    return 0;
+}

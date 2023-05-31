@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Введите целое положительное число: ";
+    cin >> num;
+    
+    bool result = (num % 2 == 0 && num >= 10 && num <= 99);
+    
+    cout << boolalpha << result << endl;
+    return 0;
+}

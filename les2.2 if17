@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    double A, B, C;
+    bool isIncreasing, isDecreasing;
+    
+    cout << "Введите значения для A, B и C: ";
+    cin >> A >> B >> C;
+    
+    isIncreasing = A < B && B < C;
+    isDecreasing = A > B && B > C;
+    
+    if (isIncreasing || isDecreasing) {
+        A *= 2;
+        B *= 2;
+        C *= 2;
+    }
+    else {
+        A = -A;
+        B = -B;
+        C = -C;
+    }
+    
+    cout << "Новые значения переменных: A = " << A << ", B = " << B << ", C = " << C << endl;
+    
+    return 0;
+}

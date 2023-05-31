@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int a, b, product = 1;
+    cout << "Enter a value for a: ";
+    cin >> a;
+    cout << "Enter a value for b (must be greater than or equal to a): ";
+    cin >> b;
+    for (int i = a; i <= b; i++) {
+        product *= i;
+    }
+    cout << "Product of integers from " << a << " to " << b << ": " << product << endl;
+    return 0;
+}

@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char direction;
+    int command;
+    cout << "Введите исходное направление робота (С, З, Ю, В): ";
+    cin >> direction;
+    cout << "Введите команду для робота (0 - продолжать движение, 1 - поворот налево, -1 - поворот направо): ";
+    cin >> command;
+
+    switch(direction) {
+        case 'С':
+            if(command == 0) {
+                cout << "Робот продолжает движение на север" << endl;
+            } else if(command == 1) {
+                cout << "Робот повернул на запад" << endl;
+            } else if(command == -1) {
+                cout << "Робот повернул на восток" << endl;
+            } else {
+                cout << "Некорректная команда" << endl;
+            }
+            break;
+        case 'З':
+            if(command == 0) {
+                cout << "Робот продолжает движение на запад" << endl;
+            } else if(command == 1) {
+                cout << "Робот повернул на юг" << endl;
+            } else if(command == -1) {
+                cout << "Робот повернул на север" << endl;
+            } else {
+                cout << "Некорректная команда" << endl;
+            }
+            break;
+        case 'Ю':
+            if(command == 0) {
+                cout << "Робот продолжает движение на юг" << endl;
+            } else if(command == 1) {
+                cout << "Робот повернул на восток" << endl;
+            } else if(command == -1) {
+                cout << "Робот повернул на запад" << endl;
+            } else {
+                cout << "Некорректная команда" << endl;
+            }
+            break;
+        case 'В':
+            if(command == 0) {
+                cout << "Робот продолжает движение на восток" << endl;
+            } else if(command == 1) {
+                cout << "Робот повернул на север" << endl;
+            } else if(command == -1) {
+                cout << "Робот повернул на юг" << endl;
+            } else {
+                cout << "Некорректная команда" << endl;
+            }
+            break;
+        default:
+            cout << "Некорректное направление робота" << endl;
+            break;
+    }
+
+    return 0;
+}

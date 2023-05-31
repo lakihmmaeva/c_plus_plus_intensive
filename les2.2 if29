@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Введите целое число: ";
+    cin >> num;
+
+    if (num == 0) {
+        cout << "Нулевое число";
+    } else if (num > 0 && num % 2 == 0) {
+        cout << "Положительное четное число";
+    } else if (num > 0 && num % 2 != 0) {
+        cout << "Положительное нечетное число";
+    } else if (num < 0 && num % 2 == 0) {
+        cout << "Отрицательное четное число";
+    } else if (num < 0 && num % 2 != 0) {
+        cout << "Отрицательное нечетное число";
+    }
+
+    return 0;
+}

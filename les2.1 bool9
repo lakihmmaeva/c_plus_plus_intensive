@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "Введите числа A и B: ";
+    cin >> a >> b;
+
+    bool result = (a % 2 != 0) || (b % 2 != 0);
+
+    if (result) {
+        cout << "Высказывание истинно (true)";
+    } else {
+        cout << "Высказывание ложно (false)";
+    }
+
+    return 0;
+}

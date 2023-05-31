@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A;
+    cout << "Введите целое число A: ";
+    cin >> A;
+    bool isPositive = A > 0;
+    if (isPositive) {
+        cout << "Число А является положительным" << endl;
+        cout << "true" << endl;
+    } else {
+        cout << "Число А не является положительным" << endl;
+        cout << "false" << endl;
+    }
+    return 0;
+}

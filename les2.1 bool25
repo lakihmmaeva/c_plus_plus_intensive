@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y;
+    cout << "Введите координаты x, y: ";
+    cin >> x >> y;
+
+    bool result = (x < 0 && y > 0);
+    
+    cout << boolalpha << result << endl;
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y, x1, y1, x2, y2;
+
+    cout << "Введите x: ";
+    cin >> x;
+    cout << "Введите y: ";
+    cin >> y;
+    cout << "Введите x1: ";
+    cin >> x1;
+    cout << "Введите y1: ";
+    cin >> y1;
+    cout << "Введите x2: ";
+    cin >> x2;
+    cout << "Введите y2: ";
+    cin >> y2;
+
+    bool result = (x > x1 && x < x2 && y > y1 && y < y2);
+
+    cout << boolalpha << result << endl;
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double t, z;
+    for (int a = 2; a <= 17; a++) {
+        t = 4 * a;
+        z = 3.5 * pow(t, 2) - 7 * t + 16;
+        cout << "При a = " << a << ", z = " << z << endl;
+    }
+    return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    int positiveCount = 0, negativeCount = 0;
+
+    cout << "Введите три целых числа: ";
+    cin >> a >> b >> c;
+
+    if (a > 0)
+    {
+        positiveCount++;
+    }
+    else if (a < 0)
+    {
+        negativeCount++;
+    }
+
+    if (b > 0)
+    {
+        positiveCount++;
+    }
+    else if (b < 0)
+    {
+        negativeCount++;
+    }
+
+    if (c > 0)
+    {
+        positiveCount++;
+    }
+    else if (c < 0)
+    {
+        negativeCount++;
+    }
+
+    cout << "Количество положительных чисел: " << positiveCount << endl;
+    cout << "Количество отрицательных чисел: " << negativeCount << endl;
+
+    return 0;
+}

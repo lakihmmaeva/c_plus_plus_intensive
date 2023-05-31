@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    float x, f;
+    cout << "Введите значение x: ";
+    cin >> x;
+
+    if (x > 0) {
+        f = 2 * sin(x);
+    } else {
+        f = 6 - x;
+    }
+
+    cout << "Значение функции f(x) = ";
+    cout << f << endl;
+
+    return 0;
+}

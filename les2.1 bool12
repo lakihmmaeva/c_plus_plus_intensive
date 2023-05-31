@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите числа A, B, C: ";
+    cin >> a >> b >> c;
+
+    bool result = (a > 0) && (b > 0) && (c > 0);
+
+    cout << boolalpha << result << endl;
+    return 0;
+}

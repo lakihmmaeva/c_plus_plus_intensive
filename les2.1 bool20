@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Введите трехзначное число: ";
+    cin >> num;
+
+    int first = num / 100; // первая цифра
+    int second = (num / 10) % 10; // вторая цифра
+    int third = num % 10; // третья цифра
+
+    bool result = (first != second) && (first != third) && (second != third);
+
+    cout << boolalpha << result << endl;
+
+    return 0;
+}

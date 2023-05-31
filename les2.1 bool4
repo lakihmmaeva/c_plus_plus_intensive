@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B;
+    bool result;
+
+    cout << "Введите число A: ";
+    cin >> A;
+
+    cout << "Введите число B: ";
+    cin >> B;
+
+    result = (A > 2) && (B <= 3);
+
+    if(result)
+    {
+        cout << "True" << endl;
+    }
+    else
+    {
+        cout << "False" << endl;
+    }
+
+    return 0;
+}
+

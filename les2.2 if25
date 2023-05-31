@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x, f;
+    cout << "Введите значение x: ";
+    cin >> x;
+    if (x < -2 || x > 2) {
+        f = 2 * x;
+    } else {
+        f = -3 * x;
+    }
+    cout << "Значение функции f(x) = " << f << endl;
+    return 0;
+}

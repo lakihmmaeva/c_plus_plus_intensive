@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+   int a, b;
+   cout << "Введите два числа: ";
+   cin >> a >> b;
+
+   if(a < b) {
+      cout << "Меньшее число: " << a << endl;
+      cout << "Порядковый номер меньшего числа: 1" << endl;
+   }
+   else if(a > b) {
+      cout << "Меньшее число: " << b << endl;
+      cout << "Порядковый номер меньшего числа: 2" << endl;
+   }
+   else {
+      cout << "Числа равны" << endl;
+   }
+
+   return 0;
+}

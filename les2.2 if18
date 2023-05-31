@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+    cout << "Введите три числа: ";
+    cin >> num1 >> num2 >> num3;
+
+    if (num1 == num2) {
+        cout << "Третье число (" << num3 << ") отличается от первого и второго" << endl;
+    } else if (num1 == num3) {
+        cout << "Второе число (" << num2 << ") отличается от первого и третьего" << endl;
+    } else {
+        cout << "Первое число (" << num1 << ") отличается от двух остальных" << endl;
+    }
+
+    return 0;
+}

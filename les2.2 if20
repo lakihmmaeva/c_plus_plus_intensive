@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2, x3, y3, a, b, c;
+    cout << "Введите x-координату точки A: ";
+    cin >> x1;
+    cout << "Введите y-координату точки A: ";
+    cin >> y1;
+    cout << "Введите x-координату точки B: ";
+    cin >> x2;
+    cout << "Введите y-координату точки B: ";
+    cin >> y2;
+    cout << "Введите x-координату точки C: ";
+    cin >> x3;
+    cout << "Введите y-координату точки C: ";
+    cin >> y3;
+    
+    a = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    b = sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2));
+    
+    if (a < b) {
+        cout << "Точка B ближе к точке A, расстояние = " << a;
+    } else if (b < a) {
+        cout << "Точка C ближе к точке A, расстояние = " << b;
+    } else {
+        cout << "Точки B и C находятся на одинаковом расстоянии от точки A, расстояние = " << a;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A;
+    bool isOdd;
+    cout << "Введите число A: ";
+    cin >> A;
+    isOdd = A % 2 != 0;
+    cout << "Число A является нечетным: " << boolalpha << isOdd << endl;
+    return 0;
+}

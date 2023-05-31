@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int b, product = 1;
+    cout << "Enter a value between 1 and 20: ";
+    cin >> b;
+    for (int i = 1; i <= b; i++) {
+        product *= i;
+    }
+    cout << "Product of integers from 1 to " << b << ": " << product << endl;
+    return 0;
+}

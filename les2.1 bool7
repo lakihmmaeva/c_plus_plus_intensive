@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    bool result;
+
+    cout << "Введите числа A, B, C: ";
+    cin >> a >> b >> c;
+
+    result = (b > a && b < c);
+
+    if (result)
+        cout << "Неравенство 'A<B<C' справедливо: true." << endl;
+    else
+        cout << "Неравенство 'A<B<C' несправедливо: false." << endl;
+
+    return 0;
+}
