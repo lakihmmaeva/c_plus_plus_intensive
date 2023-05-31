@@ -1,0 +1,11 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+cout << "sqrt(0.1) = " << sqrt(0.1) << endl;
+cout << "sqrt(0.2) = " << sqrt(0.2) << endl;
+cout << "sqrt(0.9) = " << sqrt(0.9) << endl;
+return 0;
+}

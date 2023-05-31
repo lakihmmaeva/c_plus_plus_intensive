@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    double price;
+
+    cout << "Enter the price of 1 kg of cheese: ";
+
+    cin >> price;
+
+    cout << "Weight\tCost" << endl;
+
+    for (int weight = 50; weight <= 1000; weight += 50) {
+
+        double cost = price * weight / 1000;
+
+        cout << weight << "g\t$" << cost << endl;
+
+    }
+
+    return 0;
+
+}

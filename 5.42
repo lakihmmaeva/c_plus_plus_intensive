@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int mathScore, physicsScore, chemistryScore, englishScore;
+    std::cout << "Enter math score: ";
+    std::cin >> mathScore;
+    std::cout << "Enter physics score: ";
+    std::cin >> physicsScore;
+    std::cout << "Enter chemistry score: ";
+    std::cin >> chemistryScore;
+     std::cout << "Enter english score: ";
+     std :: cin>>englishscore;
+
+   int total = math_score + physics_score + chemistry_score+englishscore;
+
+   std :: cout<<"Total Score : "<<total<<std :: endl; 
+
+  return 0; 
+}

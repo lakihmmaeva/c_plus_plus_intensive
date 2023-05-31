@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    for (int i = 20; i <= 40; i++) {
+        sum += i * i * i;
+    }
+    cout << "Сумма кубов всех целых чисел от 20 до 40: " << sum << endl;
+    return 0;
+}

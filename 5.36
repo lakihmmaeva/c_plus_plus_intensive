@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int x = 2;
+    double sum = x;
+    for (int i = 3; i <= 11; i += 2) {
+        sum += pow(x, i) / i;
+    }
+    cout << "Сумма выражения x+((x^3)/3)+((x^5)/5)+...+((x^11)/11) при x=" << x << ": " << sum << endl;
+    return 0;
+}

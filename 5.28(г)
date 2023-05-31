@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int a, b;
+   cout << "Введите значения a и b (b >= a): ";
+   cin >> a >> b;
+
+   int prod = 1;
+   for (int i = a; i <= b; i++) {
+      prod *= i;
+   }
+
+   cout << "Произведение всех целых чисел от " << a << " до " << b << ": " << prod << endl;
+   return 0;
+}

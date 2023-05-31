@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    double sum = 0.0; // инициализируем сумму нулем
+    cout << "Введите количество чисел: ";
+    cin >> n;
+    
+    for (int i = 1; i <= n; ++i) { // цикл для ввода чисел и подсчета суммы
+        double num;
+        cout << "Введите число #" << i << ": ";
+        cin >> num;
+        sum += num; // добавляем число к сумме
+    }
+    
+   cout.precision(2); // устанавливаем точность вывода два знак после запятой 
+   cout.setf(ios::fixed);
+   cout << "Сумма всех вещественных чисел равна: " << sum;
+
+   return 0;
+}

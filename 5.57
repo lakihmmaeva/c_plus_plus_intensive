@@ -1,0 +1,25 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a[2][4]; 
+    int sum[2] = {0, 0}; 
+    
+    // заполнение массива оценок
+    for (int i = 0; i < 2; i++) {
+        cout << "Оценки ученика " << i + 1 << ": ";
+        for (int j = 0; j < 4; j++) {
+            cin >> a[i][j];
+            sum[i] += a[i][j]; 
+        }
+    }
+    
+    
+    for (int i = 0; i < 2; i++) {
+        cout << "Сумма оценок ученика " << i + 1 << ": " << sum[i] << endl;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+double nestedSquareRoot(int n) {
+    double result = std::sqrt(3 * n);
+    
+    for (int i = n - 1; i >= 1; i--) {
+        result = std::sqrt(3 * i + result);
+    }
+    
+    return result;
+}
+
+int main() {
+    int n;
+    std::cout << "Введите значение n: ";
+    std::cin >> n;
+    
+    double answer = nestedSquareRoot(n);
+    
+    std::cout << "Ответ: " << answer << std::endl;
+    
+    return 0;
+}

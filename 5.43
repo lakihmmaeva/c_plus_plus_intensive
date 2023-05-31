@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n; // количество сотрудников
+    double salary, total = 0; // зарплата каждого сотрудника и общая выплаченная сумма
+
+    cout << "Введите количество сотрудников: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        cout << "Введите зарплату для " << i << "-го сотрудника: ";
+        cin >> salary;
+        total += salary;
+    }
+
+   cout.precision(2); 
+   cout.setf(ios::fixed);
+   
+   // выводим результат
+   cout << "\nОбщая выплаченная за месяц зарплата составляет: $" 
+         << total;
+
+return 0;
+}
