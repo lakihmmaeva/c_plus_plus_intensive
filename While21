@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int a, b;
+
+    cout << "Введите два целых положительных числа: ";
+
+    cin >> a >> b;
+
+    while (b != 0) {
+
+        int temp = a % b;
+
+        a = b;
+
+        b = temp;
+
+    }
+
+    cout << "Наибольший общий делитель: " << a << endl;
+
+    return 0;
+
+}

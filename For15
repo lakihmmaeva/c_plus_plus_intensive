@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+double a, result = 1; // объявляем переменные a и result, устанавливаем начальное значение result равным 1
+int n;
+
+cout << "Введите число A: ";
+cin >> a;
+
+cout << "Введите целое число N: ";
+cin >> n;
+
+for (int i = 0; i < n; i++) {
+    result *= a; // умножаем result на a на каждой итерации цикла
+}
+
+cout << a << "^" << n << " = " << result;
+
+return 0;
+}

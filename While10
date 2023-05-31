@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int n; 
+    cout << "Введите число N: ";
+    cin >> n;
+
+    int k = log(n) / log(3); 
+    cout << "Наибольшее целое число K: " << k << endl;
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath> // для использования функции pow()
+using namespace std;
+
+int main() {
+    int N, K = 1; // инициализируем K = 1
+    cout << "Введите целое число N (> 1): ";
+    cin >> N;
+    while (pow(3, K) <= N) { // пока выполняется неравенство
+        K++; // увеличиваем K на 1
+    }
+    cout << "Наименьшее целое число K, при котором 3^K > N: " << K << endl;
+    return 0;
+}

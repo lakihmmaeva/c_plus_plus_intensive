@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B;
+    cin >> A >> B;
+    int count = 0; // счетчик отрезков B
+    while (A >= B) { // пока на отрезке A может разместиться отрезок B
+        A -= B; // уменьшаем размер отрезка A на длину отрезка B
+        count++; // увеличиваем счетчик отрезков B
+    }
+    cout << count << endl;
+    return 0;
+}
