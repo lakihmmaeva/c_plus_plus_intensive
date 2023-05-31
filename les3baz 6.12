@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+double findFirstNumberLessThanA(double a) {
+    double number = 1.0;
+    double increment = 2.0;
+    
+    while (number >= a) {
+        number += 1.0 / increment;
+        increment++;
+    }
+    
+    return number;
+}
+
+int main() {
+    double a;
+    cout << "Введите значение a: ";
+    cin >> a;
+    
+    double firstNumber = findFirstNumberLessThanA(a);
+    
+    cout << "Первое число меньше " << a << ": " << firstNumber << endl;
+    
+    return 0;
+}
+

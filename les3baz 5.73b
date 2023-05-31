@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	double area = 100; // initial area
+	double yield = 20; // initial yield
+	for (int i = 1; i <= 7; i++) {
+		area *= 1.05; // increase area by 5%
+		yield *= 1.02; // increase yield by 2%
+		if (i >= 4) { // output results for years 4 to 7
+			cout << "Year " << i << ": Area = " << round(area) << " hectares, Yield = " << round(yield) << " centners/hectare" << endl;
+		}
+	}
+	return 0;
+}

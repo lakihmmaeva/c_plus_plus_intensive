@@ -1,0 +1,13 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+    float price; 
+    cout << "Enter the price per kilogram of candy: "; 
+    cin >> price; 
+    for (float kilos = 1.2; kilos <= 2.0; kilos += 0.2) { 
+        float cost = kilos * price; 
+        cout << "Cost of " << kilos << " kg of candy: " << cost << endl; 
+    }
+    return 0; 
+}

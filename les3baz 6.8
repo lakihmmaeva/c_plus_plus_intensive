@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void printNumbers(int n) {
+    int i = 1;
+    int square = 1;
+    
+    while (square <= n) {
+        cout << square << " ";
+        i++;
+        square = i * i;
+    }
+    
+    cout << std::endl;
+}
+
+int main() {
+    int n;
+    cout << "Введите значение n: ";
+    cin >> n;
+    
+    cout << "Числа, не превышающие " << n << ": ";
+    printNumbers(n);
+    
+    return 0;
+}

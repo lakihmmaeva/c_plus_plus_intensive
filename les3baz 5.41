@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    double mass[12];
+    double total_mass = 0;
+
+    // Ввод масс предметов
+    for (int i = 0; i < 12; i++) {
+        cout << "Введите массу предмета " << i+1 << ": ";
+        cin >> mass[i];
+    }
+
+    // Суммирование масс предметов
+    for (int i = 0; i < 12; i++) {
+        total_mass += mass[i];
+    }
+
+    cout << "Масса всего набора предметов: " << total_mass << endl;
+
+    return 0;
+}

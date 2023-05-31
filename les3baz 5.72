@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double distance = 10; // начальный пробег
+    for (int i = 2; i <= 10; i++) { // цикл от 2 до 10
+        distance *= 1.1; // увеличиваем пробег на 10%
+        cout << "Пробег за " << i << " день: " << distance << " км" << endl;
+    }
+    return 0;
+}

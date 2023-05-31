@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double deposit = 1000; // начальная сумма вклада
+    double interest = 0.02; // процентная ставка
+    for (int i = 1; i <= 10; i++) { // цикл от 1 до 10
+        double growth = deposit * interest; // прирост суммы вклада
+        deposit += growth; // увеличиваем сумму вклада на прирост
+        cout << "Прирост суммы вклада за " << i << " месяц: " << growth << " руб." << endl;
+    }
+    for (int i = 3; i <= 12; i++) { // цикл от 3 до 12
+        deposit *= (1 + interest); // увеличиваем сумму вклада на процентную ставку
+        cout << "Сумма вклада через " << i << " месяц: " << deposit << " руб." << endl;
+    }
+    return 0;
+}

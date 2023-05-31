@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int salary[10];
+    int total_salary = 0;
+
+    // Ввод зарплат
+    for (int i = 0; i < 10; i++) {
+        cout << "Введите зарплату сотрудника " << i+1 << ": ";
+        cin >> salary[i];
+    }
+
+    // Суммирование зарплат
+    for (int i = 0; i < 10; i++) {
+        total_salary += salary[i];
+    }
+
+    cout << "Общая сумма выплаченных денег: " << total_salary << endl;
+
+    return 0;
+}

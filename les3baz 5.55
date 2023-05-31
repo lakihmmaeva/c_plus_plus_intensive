@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+float calculateAverageMass(const vector<float>& masses) {
+    float sum = 0.0;
+    int count = masses.size();
+
+    for (int i = 0; i < count; i++) {
+        sum += masses[i];
+    }
+
+    return sum / count;
+}
+
+int main() {
+    vector<float> itemMasses = { 2.5, 3.8, 4.2, 2.1, 3.5 };
+    float averageMass = calculateAverageMass(itemMasses);
+
+    cout << "Average mass of items: " << averageMass << endl;
+
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    long long sum = 0;
+    cout << "Enter two integers (A < B): ";
+    cin >> a >> b;
+    for(int i = a; i <= b; i++) {
+        sum += i * i;
+    }
+    cout << "Sum of squares of all integers from A to B inclusive is: " << sum << endl;
+    return 0;
+}

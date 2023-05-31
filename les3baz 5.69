@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    double v1 = 0, v2 = 0, v3 = 1.5, vn;
+
+    cout << "Введите n: ";
+    cin >> n;
+
+    for (int i = 4; i <= n; i++) {
+        vn = 3 * v3 - 2 * v2 + 2 * v1;
+        v1 = v2;
+        v2 = v3;
+        v3 = vn;
+    }
+
+    cout << "V" << n << " = " << vn << endl;
+
+    return 0;
+}

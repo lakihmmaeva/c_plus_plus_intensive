@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int marks[4];
+    int total_marks = 0;
+
+    // Ввод оценок
+    for (int i = 0; i < 4; i++) {
+        cout << "Введите оценку за экзамен " << i+1 << ": ";
+        cin >> marks[i];
+    }
+
+    // Суммирование оценок
+    for (int i = 0; i < 4; i++) {
+        total_marks += marks[i];
+    }
+
+    cout << "Сумма набранных баллов: " << total_marks << endl;
+
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, sum = 0;
+    cout << "Введите значение a (0 <= a <= 50): ";
+    cin >> a;
+    for (int i = a; i <= 50; i++) {
+        sum += i * i;
+    }
+    cout << "Сумма квадратов всех целых чисел от " << a << " до 50: " << sum << endl;
+    return 0;
+}

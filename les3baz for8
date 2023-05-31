@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    long long product = 1;
+    cout << "Enter two integers (A < B): ";
+    cin >> a >> b;
+    for(int i = a; i <= b; i++) {
+        product *= i;
+    }
+    cout << "Product of all integers from A to B inclusive is: " << product << endl;
+    return 0;
+}

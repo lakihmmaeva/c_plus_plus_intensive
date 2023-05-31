@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int amoeba = 1; // начальное количество амеб
+    for (int i = 3; i <= 24; i += 3) { // цикл от 3 до 24 с шагом 3
+        amoeba *= 2; // увеличиваем количество амеб вдвое
+        cout << "Через " << i << " часов будет " << amoeba << " амеб" << endl;
+    }
+    return 0;
+}

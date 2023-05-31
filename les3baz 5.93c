@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    double sum = 0.0;
+    double cos_sum = 0.0, sin_sum = 0.0;
+
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        cos_sum += cos(i); // вычисляем сумму cos
+        sin_sum += sin(i); // вычисляем сумму sin
+        sum += cos_sum / sin_sum; // добавляем текущее значение к общей сумме
+    }
+
+    cout << "Sum = " << sum << endl;
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int numStudents = 20;
+    int marks[numStudents];
+    double sum = 0, average;
+    
+    cout << "Enter the marks of " << numStudents << " students: ";
+    for (int i = 0; i < numStudents; ++i) {
+        cin >> marks[i];
+        sum += marks[i];
+    }
+    
+    average = sum / numStudents;
+    
+    cout << "Average mark: " << average << endl;
+    
+    return 0;
+}

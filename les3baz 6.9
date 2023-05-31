@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int findFirstNumberGreaterThanN(int n) {
+    int i = 1;
+    int square = 1;
+    
+    while (square <= n) {
+        i++;
+        square = i * i;
+    }
+    
+    return square;
+}
+
+int main() {
+    int n;
+    cout << "Введите значение n: ";
+    cin >> n;
+    
+    int firstNumber = findFirstNumberGreaterThanN(n);
+    
+    cout << "Первое число больше " << n << ": " << firstNumber << endl;
+    
+    return 0;
+}

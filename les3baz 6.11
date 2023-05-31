@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void printNumbers(double a) {
+    double number = 1.0;
+    double increment = 2.0;
+    
+    while (number < a) {
+        cout << number << " ";
+        number += 1.0 / increment;
+        increment++;
+    }
+    
+    cout << std::endl;
+}
+
+int main() {
+    double a;
+    cout << "Введите значение a: ";
+    cin >> a;
+    
+    cout << "Числа, не меньшие " << a << ": ";
+    printNumbers(a);
+    
+    return 0;
+}
