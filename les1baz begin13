@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float R1, R2, S1, S2, S3, pi = 3.14;
+    cout << "Введите внешний радиус кольца" << endl;
+    cin >> R1;
+    cout << "Введите внутренний радиус кольца" << endl;
+    cin >> R2;
+    S1 = pi * R1;
+    S2 = pi * R2;
+    S3 = S1 - S2;
+    cout << "Площадь внешнего круга равна " << S1 << endl;
+    cout << "Площадь внутреннего круга равна " << S2 << endl;
+    cout << "Площадь кольца равна " << S3 << endl;
+    return 0;
+}

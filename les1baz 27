@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float r, R, pi = 3.14, S;
+    cout << "Введите внутренний радиус кольца:" << endl;
+    cin >> r;
+    cout << "Введите внешний радиус кольца" << endl;
+    cin >> R;
+    S = pi*(R*R - r*r);
+    cout << "Площадь кольца равна: " << S << endl;
+    return 0;
+}

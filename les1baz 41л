@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b;
+    cout << "Введите a" << endl;
+    cin >> a;
+    b = a*a;
+    b = b*b; 
+    b = b*b;
+    b = b*b;
+    b = b*b;
+    a = b*b;
+    cout << "a^64 = " << a << endl;
+    return 0;
+}

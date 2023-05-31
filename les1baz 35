@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, c, V, S;
+    cout << "Введите ширину параллелепипеда" << endl;
+    cin >> a;
+    cout << "Введите длину параллелепипеда" << endl;
+    cin >> b;
+    cout << "Введите высоту параллелепипеда" << endl;
+    cin >> c;
+    V = a*b*c;
+    S = 2*(a*b + b*c + a*c);
+    cout << "Объем параллелепипеда равен: " << V << endl; 
+    cout << "Площадь полной поверхности параллелепипеда равна: " << S << endl;
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x, a, b;
+    cout << "Введите значение a" << endl;
+    cin >> a;
+    cout << "Введите значение b" << endl;
+    cin >> b;
+    x = 3.56 * pow((a+b), 3) - 5.8*b*b + 3.8*a - 1.5;
+    cout << "Значение x равно: " << x << endl; 
+    return 0;
+}

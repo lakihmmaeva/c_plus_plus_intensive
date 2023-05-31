@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N, min;
+    cout << "Введите количество секунд: " << endl;
+    cin >> N;
+    min = N / 60; // находим количество полных минут
+    cout << "Прошло " << min << " минут(ы) с начала суток." << endl;
+    return 0;
+}

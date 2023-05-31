@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, diag, P;
+    cout << "Введите сторону прямоугольника (а)" << endl;
+    cin >> a;
+    cout << "Введите сторону прямоугольника (b)" << endl;
+    cin >> b;
+    P = 2*a + 2*b;
+    diag = sqrt(a*a + b*b);
+    cout << "Периметр прямоугольника равен: " << P << endl; 
+    cout << "Диагональ прямоугольника равна: " << diag << endl;
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a = a*a; 
+    a = a*a; 
+    a = a*a;
+    cout << "a^8 = " << a << endl;
+    return 0;
+}

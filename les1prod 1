@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double V, T, a;
+    const double g = 9.81; // ускорение свободного падения
+    cout << "Введите начальную скорость (м/с): ";
+    cin >> V;
+    cout << "Введите время полета (сек): ";
+    cin >> T;
+    a = asin(g*T/(2*V)) * 180 / M_PI; // перевод из радиан в градусы
+    cout << "Угол броска: " << a << " градусов" << endl;
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, des, ed;
+	cout << "Введите двузначное число " << endl;
+	cin >> a;
+	des = a/10;
+	ed = a % 10;
+	cout << "Количество десятков равно " << des << endl;
+	cout << "Количество единиц равно " << ed << endl;
+	return 0;
+}

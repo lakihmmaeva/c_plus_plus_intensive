@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float l, D, S, pi = 3.14;
+    cout << "Введите площадь круга" << endl;
+    cin >> S;
+    D = sqrt((4*S)/pi);
+    l = pi * D;
+    cout << "Диаметр окружности равен " << D << endl;
+    cout << "Длина окружности равна " << l << endl;
+    return 0;
+}

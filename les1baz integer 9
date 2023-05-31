@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, sotni;
+	cout << "Введите трехзначное число " << endl;
+	cin >> a;
+	sotni = a/100;
+	cout << "Количество сотен равно " << sotni << endl;
+	return 0;
+}

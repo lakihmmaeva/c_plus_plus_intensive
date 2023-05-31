@@ -1,0 +1,13 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a = a*a; //вторая степень
+    a = a*a; //четвертая степень
+    cout << "a^4 = " << a << endl;
+    return 0;
+}

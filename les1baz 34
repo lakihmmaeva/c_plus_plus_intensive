@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, b, sum, raz, proiz, chast;
+    cout << "Введите число а" << endl;
+    cin >> a;
+    cout << "Введите число b" << endl;
+    cin >> b;
+    sum = a+b;
+    raz = a-b;
+    proiz = a*b;
+    chast = a/b;
+    cout << "a + b = " << sum << endl; 
+    cout << "a - b = " << raz << endl;
+    cout << "a * b = " << proiz << endl;
+    cout << "a / b = " << chast << endl;
+    return 0;
+}

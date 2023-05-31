@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, a2, a4, a8, a12, a24;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a2 = a*a;
+    a4 = a2*a2;
+    a8 = a4*a4;
+    a12 = a8*a4;
+    a24 = a12*a12;
+    a = a24*a4;
+    cout << "a^4 = " << a4 << endl;
+    cout << "a^12 = " << a12 << endl;
+    cout << "a^28 = " << a << endl;
+    return 0;
+}

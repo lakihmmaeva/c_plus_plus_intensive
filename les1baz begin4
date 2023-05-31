@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float l, d, pi = 3.14;
+    cout << "Введите диаметр окружности" << endl;
+    cin >> d;
+    l = pi*d;
+    cout << "Длина окружности равна " << l << endl;
+    return 0;
+}

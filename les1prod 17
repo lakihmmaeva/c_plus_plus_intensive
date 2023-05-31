@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    const double h = 6.626e-34;
+    const double me = 9.1e-31;
+
+    double v, V;
+    cout << "Введите частоту фотона (v): ";
+    cin >> v;
+    cout << "Введите скорость электрона на выходе (V): ";
+    cin >> V;
+
+    double hv = h * v;
+    double mvv2 = me * V * V / 2;
+
+    double A = hv >= mvv2 ? hv - mvv2 : 0;
+
+    cout << "Работа выхода: " << A << " Дж" << endl;
+
+    return 0;
+}

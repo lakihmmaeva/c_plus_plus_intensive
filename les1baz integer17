@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int num, sotni;
+    cout << "введите число больше 999: ";
+    cin >> num;
+    sotni = (num / 100) % 10;
+    cout << "разряд сотен равен: " << sotni << endl;
+    return 0;
+}

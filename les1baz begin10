@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, sum, raz, umn, del;
+    cout << "Введите a (a≠0)" << endl;
+    cin >> a;
+    cout << "Введите b (b≠0)" << endl;
+    cin >> b;
+    sum = a*a + b*b;
+    raz = a*a - b*b;
+    umn = a*a * b*b;
+    del = a*a / b*b;
+    cout << "a^2 + b^2 = " << sum << endl;
+    cout << "a^2 - b^2 = " << raz << endl;
+    cout << "a^2 * b^2 = " << umn << endl;
+    cout << "a^2 / b^2 = " << del << endl;
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x, y, z, q;
+    cout << "Введите x" << endl;
+    cin >> x;
+    cout << "Введите y" << endl;
+    cin >> y;
+    float m, n;
+    m = x + ((2+y)/(x*x));
+    n = y + (1/(sqrt(x*x + 10)));
+    z = m/n;
+    q = 2.8*sin(x)+abs(y);
+    cout << "z = " << z << endl;
+    cout << "q = " << q << endl;
+    return 0;
+}

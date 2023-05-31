@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Введите размеры прямоугольника и сторону квадрата: ";
+    cin >> a >> b >> c;
+
+    int numSquares = (a / c) * (b / c);
+    int zanytayaS = numSquares * c * c;
+    int nezanytayaS = a * b - zanytayaS;
+
+    cout << "Количество квадратов: " << numSquares << endl;
+    cout << "Площадь незанятой части: " << nezanytayaS << endl;
+
+    return 0;
+}

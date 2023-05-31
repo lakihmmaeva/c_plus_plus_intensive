@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, a2, a4, a8;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a2 = a*a; 
+    a4 = a2*a2; 
+    a8 = a4*a4;
+    a = a8*a;
+    cout << "a^9 = " << a << endl;
+    return 0;
+}

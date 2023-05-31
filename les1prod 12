@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double m, a, F0, u;
+    cout << "Введите массу тела: ";
+    cin >> m;
+    cout << "Введите угол a (в градусах): ";
+    cin >> a;
+    cout << "Введите силу F(0): ";
+    cin >> F0;
+    cout << "Введите коэффициент трения u: ";
+    cin >> u;
+
+    const double g = 9.81; // ускорение свободного падения
+
+    // перевод угла в радианы
+    a = a * M_PI / 180.0;
+
+    // вычисление силы трения
+    double Ft = u * m * g * sin(a);
+
+    // вычисление равнодействующей силы
+    double F = F0 * cos(a) - Ft;
+
+    // вычисление ускорения
+    double a_res = (F > 0) ? F / m : 0;
+
+    cout << "Ускорение тела: " << a_res << " м/c^2" << endl;
+
+    return 0;
+}

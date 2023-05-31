@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, geom;
+    cout << "Введите a" << endl;
+    cin >> a;
+    cout << "Введите b" << endl;
+    cin >> b;
+    geom = sqrt(a+b);
+    cout << "Среднее геометрическое чисел a и b равно " << geom << endl;
+    return 0;
+}

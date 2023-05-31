@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x, y, arif, geom;
+    cout << "Введите значение x" << endl;
+    cin >> x;
+    cout << "Введите значение y" << endl;
+    cin >> y;
+    arif = (abs(x)+abs(y))/2;
+    geom = sqrt(abs(x)*abs(y));
+    cout << "Среднее арифметическое модулей чисел x и y равно: " << arif << endl; 
+    cout << "Среднее геометрическое модулей чисел x и y равно: " << geom << endl;
+    return 0;
+}

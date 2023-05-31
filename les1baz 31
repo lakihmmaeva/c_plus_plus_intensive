@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x, y, a, b;
+    cout << "Введите a" << endl;
+    cin >> a;
+    cout << "Введите b" << endl;
+    cin >> b;
+    float m, n;
+    m = (2/(a*a + 25)) + b;
+    n = sqrt(b) + ((a+b)/2);
+    x = m/n;
+    float u, v;
+    u = abs(a) + 2*sin(b);
+    v = 5.5*a;
+    y = u/v;
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+    return 0;
+}

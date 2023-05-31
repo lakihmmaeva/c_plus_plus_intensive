@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, b, x;
+    cout << "Введите а (при условии что а ≠ 0)" << endl;
+    cin >> a;
+    cout << "Введите b" << endl;
+    cin >> b;
+    x = -b/a;
+    cout << "Ответ: " << x << endl;
+    return 0;
+}

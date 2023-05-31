@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int bait, kilobait;
+	cout << "Введите размер файла в байтах " << endl;
+	cin >> bait;
+	kilobait = bait/1024;
+	cout << "Количество целых байтов равно " << kilobait << endl;
+	return 0;
+}

@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float x, a;
+    cout << "Введите значение a" << endl;
+    cin >> a;
+    x = 12*a*a+7*a-16;
+    cout << "Ответ: " << x << endl;
+    return 0;
+}

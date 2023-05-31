@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double m, a, u, g;
+    cout << "Введите массу тела: ";
+    cin >> m;
+    cout << "Введите угол наклона плоскости в градусах: ";
+    cin >> a;
+    cout << "Введите коэффициент трения: ";
+    cin >> u;
+    cout << "Введите ускорение свободного падения: ";
+    cin >> g;
+
+    double F = m * g * cos(a * M_PI / 180) <= u * m * g * sin(a * M_PI / 180) ? m * g * cos(a * M_PI / 180) : u * m * g * sin(a * M_PI / 180);
+    //используем тернарный оператор для определения силы трения
+
+    cout << "Сила трения равна " << F << " Н" << endl;
+
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, ed, des, sotni;
+	cout << "Введите трехзначное число " << endl;
+	cin >> a;
+	ed = a % 100 % 10;
+	des = a % 100/10;
+	sotni = a/100;
+	cout << "Число, полученное при чтении справа налево: " << des << sotni << ed << endl;
+	return 0;
+}

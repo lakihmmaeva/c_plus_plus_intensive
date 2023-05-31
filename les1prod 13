@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double angle, acceleration, friction_coefficient;
+    const double g = 9.81; // ускорение свободного падения
+    cout << "Введите угол наклона плоскости (в градусах): ";
+    cin >> angle;
+    cout << "Введите ускорение тела: ";
+    cin >> acceleration;
+    double a = acceleration / g; // переводим ускорение в единицы g
+    double sin_a = sin(angle * M_PI / 180); // переводим угол в радианы и вычисляем sin
+    double cos_a = cos(angle * M_PI / 180); // переводим угол в радианы и вычисляем cos
+    double u = (g * sin_a - a * cos_a) / (g * cos_a); // вычисляем коэффициент трения
+    cout << "Коэффициент трения: " << u << endl;
+    return 0;
+}

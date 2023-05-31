@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double V, a;
+    const double g = 9.81; // ускорение свободного падения
+    cout << "Введите начальную скорость (м/с): ";
+    cin >> V;
+    cout << "Введите угол броска (градусы): ";
+    cin >> a;
+    double rad = a * M_PI / 180; // перевод из градусов в радианы
+    double L = (V*V*sin(2*rad))/g;
+    cout << "Дальность полета: " << L << " метров" << endl;
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, des, ed, n;
+	cout << "Введите двузначное число " << endl;
+	cin >> a;
+	des = a/10;
+	ed = a % 10;
+	n = des;
+	des = ed;
+	ed = n;
+	cout << "При перестановке чисел получилось число: " << des << ed << endl;
+	return 0;
+}

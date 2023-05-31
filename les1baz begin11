@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+float a, b, sum, raz, umn, del;
+cout « "Введите a (a≠0)" « endl;
+cin » a;
+cout « "Введите b (b≠0)" « endl;
+cin » b;
+sum = abs(a) + abs(b);
+raz = abs(a) - abs(b);
+umn = abs(a) * abs(b);
+del = abs(a) / abs(b);
+cout « "|a| + |b| = " « sum « endl;
+cout « "|a| - |b| = " « raz « endl;
+cout « "|a| * |b| = " « umn « endl;
+cout « "|a| / |b| = " « del « endl;
+return 0;
+}

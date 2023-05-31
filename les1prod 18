@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double me = 9.1e-31; // масса электрона в кг
+    double c = 2.998e8; // скорость света в м/с
+    double v; // скорость электрона в м/с
+    double E_k_rel, E_nr; // кинетическая энергия (релятивистская и нерелятивистская)
+
+    cout << "Введите скорость электрона (м/с): ";
+    cin >> v;
+
+    E_k_rel = ((me * c * c) / sqrt(1 - pow(v / c, 2))) - (me * c * c);
+    E_nr = (me * pow(v, 2)) / 2;
+
+    cout << "Релятивистская кинетическая энергия: " << E_k_rel << " Дж" << endl;
+    cout << "Нерелятивистская кинетическая энергия: " << E_nr << " Дж" << endl;
+
+    return 0;
+}

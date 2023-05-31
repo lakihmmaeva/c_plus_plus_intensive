@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, V, S;
+    cout << "Введите длину ребра куба" << endl;
+    cin >> a;
+    V = pow(a,3);
+    S = 6*a*a;
+    cout << "Объем куба равен " << V << endl;
+    cout << "Площадь куба равна " << S << endl;
+    return 0;
+}

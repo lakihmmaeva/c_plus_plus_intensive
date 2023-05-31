@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x1, x2, y1, y2, d;
+    cout << "Введите значение первой координаты по оси х (х1)" << endl;
+    cin >> x1;
+    cout << "Введите значение первой координаты по оси y (y1)" << endl;
+    cin >> y1;
+    cout << "Введите значение второй координаты по оси х (х2)" << endl;
+    cin >> x2;
+    cout << "Введите значение второй координаты по оси y (y2)" << endl;
+    cin >> y2;
+    d = sqrt(pow((x2-x1),2) + pow((y2-y1),2));
+    cout << "Расстояние между точками равно " << d << endl; 
+    return 0;
+}

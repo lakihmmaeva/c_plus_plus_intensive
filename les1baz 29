@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, b, c, m, h, P;
+    cout << "Введите первое (большее) основание трапеции" << endl;
+    cin >> a;
+    cout << "Введите второе (меньшее) основание трапеции" << endl;
+    cin >> b;
+    cout << "Введите высоту трапеции" << endl;
+    cin >> h;
+    m = (a-b)/2;
+    c = sqrt(h*h + m*m);
+    P = a + b + 2*c;
+    cout << "Периметр трапеции равен: " << P << endl;
+    return 0;
+}

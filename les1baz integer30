@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+    cout << "Введите год: ";
+    cin >> year;
+
+    int century = (year - 1) / 100 + 1; // формула для определения номера столетия
+    cout << "Номер столетия: " << century << endl;
+
+    return 0;
+}

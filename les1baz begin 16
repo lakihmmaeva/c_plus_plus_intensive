@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float x1, x2, ras;
+    cout << "Введите первую координату" << endl;
+    cin >> x1;
+    cout << "Введите вторую координату" << endl;
+    cin >> x2;
+    ras = abs(x2 - x1);
+    cout << "Расстояние между точками х1 и х2 равно " << ras << endl;
+    return 0;
+}

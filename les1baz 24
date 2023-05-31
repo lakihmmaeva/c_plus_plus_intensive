@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float P, N, S;
+    cout << "Введите количество жителей" << endl;
+    cin >> N;
+    cout << "Введите площадь государства" << endl;
+    cin >> S;
+    P = N/S;
+    cout << "Плотность населения равна: " << P << endl; 
+    return 0;
+}

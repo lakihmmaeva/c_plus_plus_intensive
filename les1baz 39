@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float t, a, b;
+    cout << "Введите a" << endl;
+    cin >> a;
+    cout << "Введите b" << endl;
+    cin >> b;
+    t = b;
+    b = a;
+    a = t;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    return 0;
+}

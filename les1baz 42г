@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, a2, a4, a5, a9, a18;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a2 = a*a;
+    a4 = a2*a2;
+    a5 = a4*a;
+    a9 = a5*a4;
+    a18 = a9*a9;
+    a = a18*a;
+    cout << "a^5 = " << a5 << endl;
+    cout << "a^19 = " << a << endl;
+    return 0;
+}

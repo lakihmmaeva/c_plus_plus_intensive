@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float p, m, V;
+    cout << "Введите значение массы тела" << endl;
+    cin >> m;
+    cout << "Введите значение объема тела" << endl;
+    cin >> V;
+    p = m/V;
+    cout << "Плотность материала тела равна: " << p << endl; 
+    return 0;
+}

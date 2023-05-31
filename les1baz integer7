@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, des, ed, summa, proiz;
+	cout << "Введите двузначное число " << endl;
+	cin >> a;
+	des = a/10;
+	ed = a % 10;
+	summa = des + ed;
+	proiz = des * ed;
+	cout << "Сумма цифр числа равна " << summa << endl;
+	cout << "Произведение цифр числа равно " << proiz << endl;
+	return 0;
+}

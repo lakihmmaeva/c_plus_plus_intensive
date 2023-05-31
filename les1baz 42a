@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, a2, a3, a5;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a2 = a*a;
+    a3 = a2*a;
+    a5 = a3*a2;
+    a = a5*a5;
+    cout << "a^3 = " << a3 << endl;
+    cout << "a^10 = " << a << endl;
+    return 0;
+}

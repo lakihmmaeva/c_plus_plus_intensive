@@ -1,0 +1,29 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x1, x2, x3, y1, y2, y3;
+    float S, AB, AC, BC, P, p;
+    cout << "Введите значение первой вершины по оси х (х1)" << endl;
+    cin >> x1;
+    cout << "Введите значение первой вершины по оси y (y1)" << endl;
+    cin >> y1;
+    cout << "Введите значение второй вершины по оси х (х2)" << endl;
+    cin >> x2;
+    cout << "Введите значение второй вершины по оси y (y2)" << endl;
+    cin >> y2;
+    cout << "Введите значение третьей вершины по оси х (х3)" << endl;
+    cin >> x3;
+    cout << "Введите значение третьей вершины по оси y (y3)" << endl;
+    cin >> y3;
+    AB = sqrt(pow((x2-x1),2) + pow((y2-y1),2));
+    AC = sqrt(pow((x3-x1),2) + pow((y3-y1),2));
+    BC = sqrt(pow((x3-x2),2) + pow((y3-y2),2));
+    P = abs(AB) + abs(AC) + abs(BC);
+    p = P/2;
+    S = sqrt(p*(p-abs(AB))*(p-abs(BC))*(p-abs(AC)));
+    cout << "Периметр треугольника равен " << P << endl;
+    cout << "Площадь треугольника равна " << S << endl;
+    return 0;
+}

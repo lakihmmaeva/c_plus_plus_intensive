@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double H, V, a, t, g = 9.8;
+    cout << "Введите высоту обрыва (H): ";
+    cin >> H;
+    cout << "Введите начальную скорость (V): ";
+    cin >> V;
+    cout << "Введите угол броска (в градусах): ";
+    cin >> a;
+    a = a * M_PI / 180; // переводим градусы в радианы
+    double T = (V * sin(a) / g) * (1 + sqrt(1 + ((2 * g * H) / (V * V * sin(a) * sin(a)))));
+    cout << "Время полета камня: " << T << " секунд" << endl;
+    cout << "Введите время (t): ";
+    cin >> t;
+    if (t > T) {
+        cout << "Камень уже упал на дно обрыва" << endl;
+    } else {
+        double x = V * t * cos(a);
+        double y = H + V * t * sin(a) - (g * t * t) / 2;
+        if (y <= 0) {
+            cout << "Камень упал на дно обрыва" << endl;
+        } else {
+            double u = V * cos(a);
+            double v = V * sin(a) - g * t;
+            double ut = u;
+            double vt = v + g * t;
+            double x_t = x + ut * t;
+            double y_t = y + vt * t - (g * t * t) / 2;
+            cout << "Положение камня через время t: " << endl;
+            cout << "Высота от дна обрыва: " << y_t << " м" << endl;
+            cout << "Расстояние до края обрыва: " << x_t << " м" << endl;
+        }
+    }
+    return 0;
+}

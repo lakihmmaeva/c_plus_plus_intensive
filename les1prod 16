@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double V1, V2, P1, P2, V;
+    cout << "Введите V1: ";
+    cin >> V1;
+    cout << "Введите P1: ";
+    cin >> P1;
+    cout << "Введите V2: ";
+    cin >> V2;
+    cout << "Введите P2: ";
+    cin >> P2;
+
+    V = (P1 * V1 - P2 * V2) / (P2 - P1);
+    V = (V < 0) ? 0 : V;
+
+    cout << "Объем сыпучего вещества: " << V << endl;
+
+    return 0;
+}

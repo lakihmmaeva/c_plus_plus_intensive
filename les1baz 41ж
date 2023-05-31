@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, a2, a4, a8, a9;
+    cout << "Введите a" << endl;
+    cin >> a;
+    a2 = a*a; 
+    a4 = a2*a2; 
+    a8 = a4*a4;
+    a9 = a8*a;
+    a = a9*a4;
+    cout << "a^13 = " << a << endl;
+    return 0;
+}

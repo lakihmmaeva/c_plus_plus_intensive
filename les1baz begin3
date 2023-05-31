@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, b, P, S;
+    cout << "Введите ддину прямоугольника a" << endl;
+    cin >> a;
+    cout << "Введите ддину прямоугольника b" << endl;
+    cin >> b;
+    S = a*b;
+    P = 2*a + 2*b;
+    cout << "Площадь прямоугольника равна " << S << endl;
+    cout << "Периметр прямоугольника равен " << P << endl;
+    return 0;
+}

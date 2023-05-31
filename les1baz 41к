@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int a, b;
+    cout << "Введите a" << endl;
+    cin >> a;
+    b = a*a*a;
+    b = b*b*a; 
+    b = b*b;
+    a = b*b;
+    cout << "a^28 = " << a << endl;
+    return 0;
+}

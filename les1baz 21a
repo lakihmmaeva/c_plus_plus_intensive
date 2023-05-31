@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float x, y, z;
+    cout << "Введите значение х" << endl;
+    cin >> x;
+    cout << "Введите значение y" << endl;
+    cin >> y;
+    z = x*x*x - 2.5*x*y + 1.78*x*x - 12.5*y + 1;
+    cout << "Значение z равно: " << z << endl; 
+    return 0;
+}

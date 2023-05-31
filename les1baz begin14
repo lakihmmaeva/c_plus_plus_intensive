@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float l, R, S, pi = 3.14;
+    cout << "Введите длину окружности" << endl;
+    cin >> l;
+    R = l/(2*pi);
+    S = pi * R*R;
+    cout << "Радиус окружности равен " << R << endl;
+    cout << "Площадь круга равна " << S << endl;
+    return 0;
+}

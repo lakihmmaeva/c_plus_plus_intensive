@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float a, S;
+    cout << "Введите сторону квадрата a" << endl;
+    cin >> a;
+    S = a*a;
+    cout << "Площадь квадрата равна " << S << endl;
+    return 0;
+}

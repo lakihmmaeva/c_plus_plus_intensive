@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int x, y;
+    float geom;
+    cout << "Введите значение x" << endl;
+    cin >> x;
+    cout << "Введите значение y" << endl;
+    cin >> y;
+    geom = sqrt(x*y);
+    cout << "Среднее геометрическое чисел a и b равно: " << geom << endl; 
+    return 0;
+}

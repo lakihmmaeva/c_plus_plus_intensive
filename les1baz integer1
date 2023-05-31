@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int l, metr;
+	cout << "Введите длину в сантиметрах " << endl;
+	cin >> l;
+	metr = l/100;
+	cout << "Количество целых метров равно " << metr << endl;
+	return 0;
+}
